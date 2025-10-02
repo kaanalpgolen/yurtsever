@@ -1,8 +1,5 @@
-window.addEventListener('load', function() {
-    var audio = document.getElementById('myAudio');
-    if (audio) {
-        audio.play().catch(function(error) {
-            console.log('Oynatma hatası:', error);
-        });
-    }
+const audio = document.getElementById("burası-turkiye");
+
+document.addEventListener("click", () => {
+    audio.play().catch(e => console.log("Ses çalma hatası:", e));
 });
